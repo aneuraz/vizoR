@@ -1,9 +1,9 @@
 # library(rvest)
 # library(utils)
 
-#' [color_hex.com]() palette by number
+#' [color-hex.com](http://color-hex.com) palette by number
 #'
-#' Retrieves a color palette from [color_hex.com]() identified by its number as found in the url
+#' Retrieves a color palette from [color-hex.com](http://color-hex.com) identified by its number as found in the url
 #' of the palette page (e.g. in [https://www.color-hex.com/color-palette/5361](), 5361 is the number).
 #'
 #' @param number palette number from color-hex.com
@@ -22,9 +22,9 @@ color_hex_palette_from_number <- function(number) {
 
 
 
-#' [color_hex.com]() palette by name
+#' [color-hex.com](http://color-hex.com) palette by name
 #'
-#' Retrieves a color palette from [color_hex.com]() identified by its name.
+#' Retrieves a color palette from [color-hex.com](http://color-hex.com) identified by its name.
 #'
 #' @param name name of the palette
 #'

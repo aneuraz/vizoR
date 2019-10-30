@@ -1,10 +1,10 @@
 
-#' [colourlovers.com]() palette by number
+#' [colourlovers.com](http://colourlovers.com) palette by number
 #'
-#' Retrieves a color palette from  [colourlovers.com]() identified by its number as found in the url
+#' Retrieves a color palette from  [colourlovers.com](http://colourlovers.com) identified by its number as found in the url
 #' of the palette page (e.g. in ['https://www.colourlovers.com/palette/292482/Terra'](), 292482 is the number (or 292482/Terra )).
 #'
-#' @param number palette number from [colourlovers.com]()
+#' @param number palette number from [colourlovers.com](http://colourlovers.com)
 #'
 #' @return character vector of hexadecimal colors
 #' @export

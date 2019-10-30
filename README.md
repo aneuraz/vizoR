@@ -21,7 +21,7 @@ devtools::install_github("aneuraz/vizoR")
 
 ## Example
 
-### Retrieving a color palette from [color-hex.com]() (by number)
+### Retrieving a color palette from [color-hex.com](http://color-hex.com) (by number)
 
 ``` r
 library(vizoR)
@@ -39,7 +39,7 @@ show_pal(pal5361)
 
 <img src="man/figures/README-plot-1.png" width="100%" />
 
-### Retrieving a color palette from [color-hex.com]() (by name)
+### Retrieving a color palette from [color-hex.com](http://color-hex.com) (by name)
 
 ``` r
 library(vizoR)
@@ -55,7 +55,7 @@ show_pal(palCook)
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
-### Retrieving a color palette from [colourlovers.com]() (by number)
+### Retrieving a color palette from [colourlovers.com](http://colourlovers.com) (by number)
 
 ``` r
 palTerra <- colour_lovers_palette_from_number("292482/Terra")

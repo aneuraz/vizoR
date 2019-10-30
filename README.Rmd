@@ -29,7 +29,7 @@ devtools::install_github("aneuraz/vizoR")
 
 ## Example
 
-### Retrieving a color palette from [color-hex.com]() (by number)
+### Retrieving a color palette from [color-hex.com](http://color-hex.com) (by number)
 
 ```{r example}
 library(vizoR)
@@ -44,7 +44,7 @@ pal5361
 show_pal(pal5361)
 ```
 
-### Retrieving a color palette from [color-hex.com]() (by name)
+### Retrieving a color palette from [color-hex.com](http://color-hex.com) (by name)
 
 ```{r}
 library(vizoR)
@@ -58,7 +58,7 @@ show_pal(palCook)
 ```
 
 
-### Retrieving a color palette from [colourlovers.com]() (by number)
+### Retrieving a color palette from [colourlovers.com](http://colourlovers.com) (by number)
 
 ```{r}
 palTerra <- colour_lovers_palette_from_number("292482/Terra")
