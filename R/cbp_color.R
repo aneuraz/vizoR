@@ -29,7 +29,7 @@ cbp_pal <- function(black = FALSE) {
 #' @param black logical use the palette with grey or black color (default = FALSE)
 #' @rdname scale_cbp
 #' @export
-scale_colour_cbp <- function(black=FALSE,...) { discrete_scale("colour", "cbp", cbp_pal(black), ...) }
+scale_colour_cbp <- function(black=FALSE,...) { ggplot2::discrete_scale("colour", "cbp", cbp_pal(black), ...) }
 
 #' @export
 #' @rdname scale_cbp
@@ -37,4 +37,4 @@ scale_color_cbp <- scale_colour_cbp
 
 #' @export
 #' @rdname scale_cbp
-scale_fill_cbpm <- function(black=FALSE,...) { discrete_scale("fill", "cbp", cbp_pal(black), ...) }
+scale_fill_cbp <- function(black=FALSE,...) { ggplot2::discrete_scale("fill", "cbp", cbp_pal(black), ...) }

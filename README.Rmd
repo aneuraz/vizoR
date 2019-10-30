@@ -27,7 +27,7 @@ This package is under active developpement. You can install it from github:
 devtools::install_github("aneuraz/vizoR")
 ```
 
-## Example
+## Palettes
 
 ### Retrieving a color palette from [color-hex.com](http://color-hex.com) (by number)
 
@@ -102,6 +102,25 @@ p1 + p2 + patchwork::plot_layout(ncol = 1)
 
 p <- ggplot(mtcars, aes(wt, mpg))
 p + geom_point(size = 4, aes(colour = factor(cyl))) +
+  scale_color_cbp(black = FALSE) +
+  theme_bw()
+
+```
+
+## Generate random datasets for testing 
+
+```{r}
+dt <- generate_dataset_uniform(dataset_size = list(20,10, 15, 8), 
+                               min_x = list(0, 1, 3, 3), 
+                               max_x = list(3, 4, 5, 7), 
+                               seed = 13)
+dplyr::glimpse(dt)
+```
+
+```{r}
+
+p <- ggplot(dt, aes(x, y))
+p + geom_point(size = 4, aes(colour = group)) +
   scale_color_cbp(black = FALSE) +
   theme_bw()
 

@@ -2,7 +2,7 @@
 % Please edit documentation in R/color_hex_palette_from_number.R
 \name{color_hex_palette_from_number}
 \alias{color_hex_palette_from_number}
-\title{[color_hex.com]() palette by number}
+\title{[color-hex.com](http://color-hex.com) palette by number}
 \usage{
 color_hex_palette_from_number(number)
 }
@@ -13,7 +13,7 @@ color_hex_palette_from_number(number)
 character vector of hexadecimal colors
 }
 \description{
-Retrieves a color palette from [color_hex.com]() identified by its number as found in the url
+Retrieves a color palette from [color-hex.com](http://color-hex.com) identified by its number as found in the url
 of the palette page (e.g. in [https://www.color-hex.com/color-palette/5361](), 5361 is the number).
 }
 \examples{

@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "antoine.neuraz@gmail.com",
            comment = c(ORCID = "0000-0001-7142-6728"))
-Description: Provides a series of function to help design better visualizations in R. Mostly suited for ggplot2
+Description: Provides a series of function to help design better visualizations in R. Mostly suited for ggplot2.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -20,4 +20,5 @@ Imports:
     dplyr,
     stringr,
     ggplot2,
-    scales
+    scales,
+    glue

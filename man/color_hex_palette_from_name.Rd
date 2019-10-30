@@ -2,7 +2,7 @@
 % Please edit documentation in R/color_hex_palette_from_number.R
 \name{color_hex_palette_from_name}
 \alias{color_hex_palette_from_name}
-\title{[color_hex.com]() palette by name}
+\title{[color-hex.com](http://color-hex.com) palette by name}
 \usage{
 color_hex_palette_from_name(name)
 }
@@ -13,7 +13,7 @@ color_hex_palette_from_name(name)
 character vector of hexadecimal colors
 }
 \description{
-Retrieves a color palette from [color_hex.com]() identified by its name.
+Retrieves a color palette from [color-hex.com](http://color-hex.com) identified by its name.
 }
 \examples{
 color_hex_palette_from_name("Cook")

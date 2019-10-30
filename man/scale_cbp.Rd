@@ -3,14 +3,14 @@
 \name{scale_colour_cbp}
 \alias{scale_colour_cbp}
 \alias{scale_color_cbp}
-\alias{scale_fill_cbpm}
+\alias{scale_fill_cbp}
 \title{Discrete colorblind proof color & fill scales}
 \usage{
 scale_colour_cbp(black = FALSE, ...)
 
 scale_color_cbp(black = FALSE, ...)
 
-scale_fill_cbpm(black = FALSE, ...)
+scale_fill_cbp(black = FALSE, ...)
 }
 \arguments{
 \item{black}{logical use the palette with grey or black color (default = FALSE)}

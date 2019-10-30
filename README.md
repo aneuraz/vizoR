@@ -19,7 +19,7 @@ github:
 devtools::install_github("aneuraz/vizoR")
 ```
 
-## Example
+## Palettes
 
 ### Retrieving a color palette from [color-hex.com](http://color-hex.com) (by number)
 
@@ -108,3 +108,28 @@ p + geom_point(size = 4, aes(colour = factor(cyl))) +
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+
+## Generate random datasets for testing
+
+``` r
+dt <- generate_dataset_uniform(dataset_size = list(20,10, 15, 8), 
+                               min_x = list(0, 1, 3, 3), 
+                               max_x = list(3, 4, 5, 7), 
+                               seed = 13)
+dplyr::glimpse(dt)
+#> Observations: 53
+#> Variables: 3
+#> $ x     <dbl> 2.13, 0.74, 1.17, 0.27, 2.89, 0.03, 1.72, 2.29, 2.62, 0.12…
+#> $ y     <dbl> 0.41, 1.64, 2.03, 1.58, 0.26, 1.86, 0.10, 1.38, 0.99, 1.90…
+#> $ group <chr> "group1", "group1", "group1", "group1", "group1", "group1"…
+```
+
+``` r
+
+p <- ggplot(dt, aes(x, y))
+p + geom_point(size = 4, aes(colour = group)) +
+  scale_color_cbp(black = FALSE) +
+  theme_bw()
+```
+
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
