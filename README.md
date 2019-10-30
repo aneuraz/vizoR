@@ -133,3 +133,28 @@ p + geom_point(size = 4, aes(colour = group)) +
 ```
 
 <img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+
+## Themes
+
+### `theme_elegant`
+
+``` r
+
+p <- ggplot(dt, aes(x, y))
+p + geom_point(size = 4, aes(colour = group)) +
+  scale_color_cbp(black = FALSE) +
+  theme_elegant()
+```
+
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+
+### `theme_elegant_dark`
+
+``` r
+p1 <- ggplot(dt, aes(x, y))
+p1 + geom_point(size = 4, aes(colour = group)) +
+  scale_color_cbp(black = FALSE) +
+  theme_elegant_dark()
+```
+
+<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" />

@@ -127,3 +127,26 @@ p + geom_point(size = 4, aes(colour = group)) +
 ```
 
 
+## Themes
+
+###  `theme_elegant`
+
+```{r}
+
+p <- ggplot(dt, aes(x, y))
+p + geom_point(size = 4, aes(colour = group)) +
+  scale_color_cbp(black = FALSE) +
+  theme_elegant()
+
+```
+
+###  `theme_elegant_dark`
+
+```{r}
+p1 <- ggplot(dt, aes(x, y))
+p1 + geom_point(size = 4, aes(colour = group)) +
+  scale_color_cbp(black = FALSE) +
+  theme_elegant_dark()
+
+
+```
