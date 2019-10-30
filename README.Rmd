@@ -40,7 +40,7 @@ pal
 
 Plotting the palette
 
-```{r plot}
+```{r plot, fig.asp=0.2}
 
 show_pal(pal)
 

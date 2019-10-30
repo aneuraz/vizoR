@@ -39,3 +39,4 @@ show_pal(pal)
 ```
 
 <img src="man/figures/README-plot-1.png" width="100%" />
+
