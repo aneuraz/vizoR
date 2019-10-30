@@ -6,10 +6,11 @@ cbp2 <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
 
 #' A colorblind proof color palette
 #'
+#' @param black logical use the palette with grey or black color (default = FALSE)
 #' @export
 #' @examples
-#' scales::show_col(cbp_pal(black = FALSE)(8))
-#' scales::show_col(cbp_pal(black = TRUE)(8))
+#' show_pal(cbp_pal(black = FALSE)(8))
+#' show_pal(cbp_pal(black = TRUE)(8))
 #'
 cbp_pal <- function(black = FALSE) {
   if (black) {
@@ -25,6 +26,7 @@ cbp_pal <- function(black = FALSE) {
 #'
 #' @md
 #' @inheritDotParams ggplot2::discrete_scale -expand -position
+#' @param black logical use the palette with grey or black color (default = FALSE)
 #' @rdname scale_cbp
 #' @export
 scale_colour_cbp <- function(black=FALSE,...) { discrete_scale("colour", "cbp", cbp_pal(black), ...) }

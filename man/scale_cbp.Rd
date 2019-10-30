@@ -6,13 +6,15 @@
 \alias{scale_fill_cbpm}
 \title{Discrete colorblind proof color & fill scales}
 \usage{
-scale_colour_cbp(...)
+scale_colour_cbp(black = FALSE, ...)
 
-scale_color_cbp(...)
+scale_color_cbp(black = FALSE, ...)
 
-scale_fill_cbpm(...)
+scale_fill_cbpm(black = FALSE, ...)
 }
 \arguments{
+\item{black}{logical use the palette with grey or black color (default = FALSE)}
+
 \item{...}{Arguments passed on to \code{ggplot2::discrete_scale}
 \describe{
   \item{aesthetics}{The names of the aesthetics that this scale works with}

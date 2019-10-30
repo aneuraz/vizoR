@@ -6,11 +6,14 @@
 \usage{
 cbp_pal(black = FALSE)
 }
+\arguments{
+\item{black}{logical use the palette with grey or black color (default = FALSE)}
+}
 \description{
 A colorblind proof color palette
 }
 \examples{
-scales::show_col(cbp_pal(black = FALSE)(8))
-scales::show_col(cbp_pal(black = TRUE)(8))
+show_pal(cbp_pal(black = FALSE)(8))
+show_pal(cbp_pal(black = TRUE)(8))
 
 }
