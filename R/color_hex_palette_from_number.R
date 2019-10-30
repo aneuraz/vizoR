@@ -1,5 +1,5 @@
-#library(rvest)
-#library(utils)
+# library(rvest)
+# library(utils)
 
 #' color-hex.com palette by number
 #'
@@ -14,9 +14,8 @@
 #' @examples
 #' color_hex_palette_from_number(5361)
 color_hex_palette_from_number <- function(number) {
-
-  h <- xml2::read_html(stringr::str_glue('https://www.color-hex.com/color-palette/{number}'))
-  h <- rvest::html_node(h, ".table" )
+  h <- xml2::read_html(stringr::str_glue("https://www.color-hex.com/color-palette/{number}"))
+  h <- rvest::html_node(h, ".table")
   h <- rvest::html_table(h)
   dplyr::pull(h, Hex)
 }
