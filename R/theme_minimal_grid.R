@@ -29,3 +29,30 @@ theme_minimal_grid <- function(base_size = 11,
       complete = TRUE
     )
 }
+
+
+#' Theme completely void (no legend)
+#'
+#' Theme completely void (no legend)
+#'
+#' @param base_size base_size
+#' @param base_family base_family
+#' @param base_line_size base_line_size
+#' @param base_rect_size base_rect_size
+#'
+#' @return
+#' @export
+#'
+#' @examples
+theme_void_complete <- function(base_size = 11,
+                          base_family = "",
+                          base_line_size = base_size / 170,
+                          base_rect_size = base_size / 170) {
+
+  theme_void(base_size = base_size,
+             base_family = base_family,
+             base_line_size = base_line_size) %+replace%
+    theme( legend.position = "none",
+           plot.title = element_text(hjust = 0.5)
+    )
+}
