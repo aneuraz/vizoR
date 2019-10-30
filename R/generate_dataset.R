@@ -29,13 +29,12 @@ generate_dataset_uniform <- function(
   }
 
   if (length(min_x) < length(dataset_size )) {
-    as.list(rep(min_x), length(dataset_size))
+    min_x <- as.list(rep(min_x, length(dataset_size)))
   }
 
   if (length(max_x) < length(dataset_size )) {
-    as.list(rep(max_x), length(dataset_size))
+    max_x <- as.list(rep(max_x, length(dataset_size)))
   }
-
 
   res <- lapply(1:length(dataset_size), function(i) {
     draw_uniform_sample(size=dataset_size[[i]],
