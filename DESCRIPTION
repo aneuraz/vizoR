@@ -19,4 +19,5 @@ Imports:
     xml2,
     dplyr,
     stringr,
-    ggplot2
+    ggplot2,
+    scales

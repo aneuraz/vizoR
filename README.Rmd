@@ -29,7 +29,7 @@ devtools::install_github("aneuraz/vizoR")
 
 ## Example
 
-Retrieving a color palette from color-hex.com (by number)
+### Retrieving a color palette from color-hex.com (by number)
 
 ```{r example}
 library(vizoR)
@@ -41,8 +41,29 @@ pal
 Plotting the palette
 
 ```{r plot, fig.asp=0.2}
-
 show_pal(pal)
+```
+
+Using the palette
+
+```{r palette usage}
+library(ggplot2)
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p + geom_point(size = 4, aes(colour = factor(cyl))) +
+  scale_color_manual(values = pal) +
+  theme_bw()
+```
+
+### Using a color-blind proof palette
+
+```{r}
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p + geom_point(size = 4, aes(colour = factor(cyl))) +
+  scale_color_cbp(black = FALSE) +
+  theme_bw()
 
 ```
+
 
