@@ -1,6 +1,6 @@
 Package: vizoR
-Title: Helper Functions For Dataviz In R
-Version: 0.0.0.9000
+Title: Helper Functions and Datasets For Dataviz In R
+Version: 0.1
 Authors@R: 
     person(given = "Antoine",
            family = "Neuraz",
@@ -8,12 +8,17 @@ Authors@R:
            email = "antoine.neuraz@gmail.com",
            comment = c(ORCID = "0000-0001-7142-6728"))
 Description: Provides a series of function to help design better visualizations in R. Mostly suited for ggplot2.
+Depends: R (>= 3.1.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown, 
+    hrbrthemes,
+    gganimate
 Imports: 
     rvest,
     xml2,
@@ -22,3 +27,4 @@ Imports:
     ggplot2,
     scales,
     glue
+VignetteBuilder: knitr
