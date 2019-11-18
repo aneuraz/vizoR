@@ -56,3 +56,49 @@
 #' @source \url{https://www.sentiweb.fr/datasets/incidence-RDD-3.csv}
 "grippe"
 
+
+#' Minard: cities
+#'
+#' A dataset containing the cities for the Minard dataviz.
+#'
+#' @format A data frame with 20 rows and 3 variables:
+#' \describe{
+#'   \item{long}{Longitude}
+#'   \item{lat}{Latitude}
+#'   \item{city}{City}
+#' }
+#'
+#' @source \url{http://www.datavis.ca/gallery/minard/ggplot2/}
+"minard_cities"
+
+#' Minard: temps
+#'
+#' A dataset containing the temperatures for the Minard dataviz.
+#'
+#' @format A data frame with 9 rows and 5 variables:
+#' \describe{
+#'   \item{long}{Longitude}
+#'   \item{temp}{Temperature in °C}
+#'   \item{month}{Month}
+#'   \item{day}{Day}
+#'   \item{date}{Date}
+#' }
+#'
+#' @source \url{http://www.datavis.ca/gallery/minard/ggplot2/}
+"minard_temps"
+
+#' Minard: troops
+#'
+#' A dataset containing the troops for the Minard dataviz.
+#'
+#' @format A data frame with 51 rows and 5 variables:
+#' \describe{
+#'   \item{long}{Longitude}
+#'   \item{lat}{Latitude}
+#'   \item{survivors}{Survivors}
+#'   \item{direction}{Direction A = Aller, R = Retour}
+#'   \item{group}{group}
+#' }
+#'
+#' @source \url{http://www.datavis.ca/gallery/minard/ggplot2/}
+"minard_troops"
