@@ -102,3 +102,22 @@
 #'
 #' @source \url{http://www.datavis.ca/gallery/minard/ggplot2/}
 "minard_troops"
+
+#' Pubmed articles about AI until november 2019
+#'
+#' Pubmed articles about AI until november 2019
+#'
+#' @format A data frame with 101,000 rows and 28 variables:
+#' \describe{
+#'   \item{title}{Title}
+#'   \item{year}{Year}
+#'   \item{journal}{Journal}
+#'   \item{pmid}{Pubmed ID}
+#'   \item{keywords}{keywords}
+#'   \item{authors}{authors}
+#'   \item{abstract}{abstract}
+#'   \item{NLMid}{NLMid}
+#' }
+
+"ai_pubmed"
+

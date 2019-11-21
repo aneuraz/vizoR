@@ -4,8 +4,12 @@
 \alias{theme_void_complete}
 \title{Theme completely void (no legend)}
 \usage{
-theme_void_complete(base_size = 11, base_family = "",
-  base_line_size = base_size/170, base_rect_size = base_size/170)
+theme_void_complete(
+  base_size = 11,
+  base_family = "",
+  base_line_size = base_size/170,
+  base_rect_size = base_size/170
+)
 }
 \arguments{
 \item{base_size}{base_size}
@@ -15,6 +19,9 @@ theme_void_complete(base_size = 11, base_family = "",
 \item{base_line_size}{base_line_size}
 
 \item{base_rect_size}{base_rect_size}
+}
+\value{
+
 }
 \description{
 Theme completely void (no legend)

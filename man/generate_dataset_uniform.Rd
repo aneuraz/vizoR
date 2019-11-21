@@ -4,8 +4,12 @@
 \alias{generate_dataset_uniform}
 \title{Generate a uniform dataset with 2 groups}
 \usage{
-generate_dataset_uniform(dataset_size = list(20, 2), min_x = 0,
-  max_x = 5, seed = NULL)
+generate_dataset_uniform(
+  dataset_size = list(20, 2),
+  min_x = 0,
+  max_x = 5,
+  seed = NULL
+)
 }
 \arguments{
 \item{dataset_size}{integer or list(integer). number of observations}

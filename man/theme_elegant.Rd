@@ -4,8 +4,12 @@
 \alias{theme_elegant}
 \title{Theme Elegant}
 \usage{
-theme_elegant(base_size = 11, base_family = "",
-  base_line_size = base_size/22, base_rect_size = base_size/22)
+theme_elegant(
+  base_size = 11,
+  base_family = "",
+  base_line_size = base_size/22,
+  base_rect_size = base_size/22
+)
 }
 \arguments{
 \item{base_size}{base_size}
@@ -15,6 +19,9 @@ theme_elegant(base_size = 11, base_family = "",
 \item{base_line_size}{base_line_size}
 
 \item{base_rect_size}{base_rect_size}
+}
+\value{
+
 }
 \description{
 An elegant ggplot theme for modern visualizations

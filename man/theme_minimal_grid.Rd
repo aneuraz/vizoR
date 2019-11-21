@@ -4,8 +4,12 @@
 \alias{theme_minimal_grid}
 \title{Theme Minimal for grid display}
 \usage{
-theme_minimal_grid(base_size = 11, base_family = "",
-  base_line_size = base_size/22, base_rect_size = base_size/22)
+theme_minimal_grid(
+  base_size = 11,
+  base_family = "",
+  base_line_size = base_size/22,
+  base_rect_size = base_size/22
+)
 }
 \arguments{
 \item{base_size}{base_size}

@@ -4,7 +4,7 @@
 \name{grippe}
 \alias{grippe}
 \title{Sentiweb Incidence Data file for flu (grippe)}
-\format{An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 23764 rows and 9 columns.}
+\format{}
 \source{
 \url{https://www.sentiweb.fr/datasets/incidence-RDD-3.csv}
 }
