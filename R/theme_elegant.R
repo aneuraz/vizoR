@@ -84,7 +84,7 @@ theme_elegant_dark <-function(base_size = 11,
                          base_line_size = base_size / 22,
                          base_rect_size = base_size / 22) {
 
-  dark_color = "#0d0d0d"
+  dark_color = "grey90"
   light_color = "#E0E0E0"
 
   theme_elegant(base_size = base_size,
